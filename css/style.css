@@ -55,7 +55,9 @@ main section.portfolio div{
 
 main section.portfolio div a img{
     max-width: 30rem;
+    border-radius: 25px;
 }
+
 
 /*section skillset*/
 
