@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: red 1px solid; */
+}
+:root {
+    --primario:#112D4E;
+    --secundario:#3F72AF;
+    --terciario:#DBE2EF;
+    --cuarto:#DBE2EF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Montserrat:wght@300&family=Roboto:wght@100;300&display=swap');
+
+
+body{
+    font-family:'Montserrat', sans-serif;
+    /* color: var(--terciario); */
+    background-color:var(--cuarto);
+}
+
+header{
+    display: flex;
+    flex-direction: column;       
+}
+
+
+div.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    background-color:var(--secundario);
+    padding: 0.5%;
+    box-shadow: 3px 8px 11px -1px rgba(0,0,0,0.41);
+    color: var(--cuarto);
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* section portfolio*/
+
+main section.portfolio div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    gap:25px;
+    padding: 5%;
+    color: var(--primario);
+}
+
+main section.portfolio div a img{
+    max-width: 30rem;
+}
+
+/*section skillset*/
+
+section.skillset{
+    background-color: var(--secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 8px 11px -1px rgba(0,0,0,0.41);
+}
+section.skillset div{
+    display: flex;
+    justify-content: space-around;
+}
+section.skillset h3{
+    font-size: 3rem;
+    font-size: normal;
+    color:var(--cuarto);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+section.skillset div img{
+    padding: 2% 0%;
+    max-width: 40%;
+}
+
+/*section experience*/
+
+div.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div.card{
+    position: relative;
+}
+
+section.experience h3{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primario);
+    padding: 5%;
+}
+section.experience div{
+    display: flex;
+}
+div.card h5 p{
+    color: var(--primario);
+    position: absolute;
+    top: 10%;
+    left:10%
+}
+
+section.contact{
+    background-color: var(--secundario);
+    color: var(--cuarto);
+    padding: 2%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--cuarto);
+    background-color: var(--primario);
+    padding: 1%;
+    box-shadow: 3px 8px 11px -1px rgba(0,0,0,0.41);
+}
+
+
+
+@media screen and (max-width: 700px){
+    div.navbar a{
+        display: none;
+    }
+}
+
+
