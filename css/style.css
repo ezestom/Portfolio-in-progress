@@ -15,7 +15,6 @@
 
 body{
     font-family:'Montserrat', sans-serif;
-    /* color: var(--terciario); */
     background-color:var(--cuarto);
 }
 
@@ -24,17 +23,20 @@ header{
     flex-direction: column;       
 }
 
+div.navbar{
+    font-size: 100%;
+}
 
 div.navbar ul{
     display: flex;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 100%;
     background-color:var(--secundario);
     padding: 0.5%;
     box-shadow: 3px 8px 11px -1px rgba(0,0,0,0.41);
     color: var(--cuarto);
-}
 
+}
 
 main{
     display: flex;
@@ -47,14 +49,18 @@ main section.portfolio div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     gap:25px;
     padding: 5%;
     color: var(--primario);
 }
+main section.portfolio div a{
+    display: flex;
+    justify-content: center;
+}
 
 main section.portfolio div a img{
-    max-width: 30rem;
+    max-width: 50%;
     border-radius: 25px;
 }
 
@@ -73,7 +79,7 @@ section.skillset div{
     justify-content: space-around;
 }
 section.skillset h3{
-    font-size: 3rem;
+    font-size: 2rem;
     font-size: normal;
     color:var(--cuarto);
     padding-top: 2%;
@@ -89,7 +95,7 @@ section.skillset div img{
 main h3{
     text-align: center;
     padding-top: 8%;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--primario);
     font-style: normal;
 }
@@ -99,6 +105,7 @@ section.experience{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 section.experience article{
     padding: 15% 2%;
@@ -230,7 +237,7 @@ footer{
 
 
 @media screen and (max-width: 700px){
-    div.navbar a{
+    div.navbar ul {
         display: none;
     }
 }
